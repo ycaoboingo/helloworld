@@ -1,0 +1,10 @@
+{
+  "name": "node-helloworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yixin Cao <ycao@boingo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}
