@@ -1,4 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/boingo-helloworld/helloworld', '.' ]
-images: ['gcr.io/boingo-helloworld/helloworld']
+images:
+  - 'gcr.io/boingo-helloworld/helloworld:$COMMIT_SHA'
+  - 'gcr.io/boingo-helloworld/helloworld:latest'
